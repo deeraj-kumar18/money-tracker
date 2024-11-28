@@ -17,6 +17,7 @@ function EntryForm({ onSubmit, onCancel }) {
     }
   };
 
+  
   return (
     <div className="form-container">
       <h2>Add New Entry</h2>
