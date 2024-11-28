@@ -6,9 +6,9 @@ function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <div className="home-page">
+    <div className="homepage">
       <h1>Money Tracker</h1>
-      <div className="button-container">
+      <div className="buttoncontainer1">
         <button onClick={() => navigate("/add-entry")}>Add Entry</button>
         <button onClick={() => navigate("/credit-history")}>
           Credit History Details

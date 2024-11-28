@@ -1,62 +1,35 @@
-import React, { useState } from "react";
-import "./AddEntry.css";
+import React from 'react';
+import './AddEntry.css'; 
 
-function AddEntry() {
-  const [name, setName] = useState("");
-  const [amount, setAmount] = useState("");
-  const [type, setType] = useState("credit");
-  const [note, setNote] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log({ name, amount, type, note });
-    // Logic to save the entry
-  };
-
+const AddEntry = () => {
   return (
-    <div className="add-entry">
-      <h2>Add New Entry</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="addEntry">
+      <h2>Add Entry</h2>
+      <form>
         <div>
-          <label>Person Name:</label>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" />
         </div>
         <div>
-          <label>Amount:</label>
-          <input
-            type="number"
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
-            required
-          />
+          <label htmlFor="amount">Amount</label>
+          <input type="number" id="amount" />
         </div>
         <div>
-          <label>Type:</label>
-          <select
-            value={type}
-            onChange={(e) => setType(e.target.value)}
-            required
-          >
+          <label htmlFor="type">Type</label>
+          <select id="type">
             <option value="credit">Credit</option>
             <option value="debit">Debit</option>
           </select>
         </div>
         <div>
-          <label>Note:</label>
-          <textarea
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-          />
+          <label htmlFor="note">Note</label>
+          <textarea id="note"></textarea>
         </div>
-        <button type="submit">Add</button>
+        <button type="submit">Save Entry</button>
       </form>
     </div>
   );
-}
+};
 
 export default AddEntry;

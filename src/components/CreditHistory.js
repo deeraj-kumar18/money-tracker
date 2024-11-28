@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./CreditHistory.css";
 function CreditHistory() {
   return (
     <div>
