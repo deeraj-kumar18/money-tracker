@@ -1,0 +1,32 @@
+/* HomePage Component Styles */
+.home-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .home-page h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2d3a4b;
+  }
+  
+  .button-container {
+    margin-top: 30px;
+  }
+  
+  button {
+    background-color: #007bff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #003f7f;
+  }
+  
