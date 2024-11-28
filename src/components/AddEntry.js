@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function EntryForm({ onSubmit, onCancel }) {
+function AddEntry() {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
   const [type, setType] = useState("credit");
@@ -8,18 +8,12 @@ function EntryForm({ onSubmit, onCancel }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name && amount && type) {
-      onSubmit({ name, amount, type, note });
-      setName("");
-      setAmount("");
-      setType("credit");
-      setNote("");
-    }
+    console.log({ name, amount, type, note });
+    // Logic to save the entry
   };
 
-  
   return (
-    <div className="form-container">
+    <div className="add-entry">
       <h2>Add New Entry</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -58,15 +52,10 @@ function EntryForm({ onSubmit, onCancel }) {
             onChange={(e) => setNote(e.target.value)}
           />
         </div>
-        <div className="form-buttons">
-          <button type="submit">Add</button>
-          <button type="button" onClick={onCancel}>
-            Cancel
-          </button>
-        </div>
+        <button type="submit">Add</button>
       </form>
     </div>
   );
 }
 
-export default EntryForm;
+export default AddEntry;
