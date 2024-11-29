@@ -1,0 +1,47 @@
+/* CreditHistory Component Styles */
+.credit-history {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .credit-history h2 {
+    color: #2d3a4b;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  td:hover {
+    background-color: #f1f1f1;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
